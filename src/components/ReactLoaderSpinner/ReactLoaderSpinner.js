@@ -18,7 +18,15 @@ const LoaderWrapper = ({ type }) => {
 const ReactLoaderSpinner = () => {
     return (
         <React.Fragment>
-            <h2>React Loader Spinner</h2>
+            <h2>
+                <a
+                    href="https://www.npmjs.com/package/react-loader-spinner"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    React Loader Spinner
+                </a>
+            </h2>
             <div className="react-loader-spinner">
                 <LoaderWrapper type="Audio" />
                 <LoaderWrapper type="BallTriangle" />

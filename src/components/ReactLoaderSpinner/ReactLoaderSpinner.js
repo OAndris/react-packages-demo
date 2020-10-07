@@ -5,13 +5,16 @@ import './ReactLoaderSpinner.css';
 
 const LoaderWrapper = ({ type }) => {
     return (
-        <Loader
-            type={type}
-            color="#00BFFF"
-            height={100}
-            width={100}
-            // timeout={5000}
-        />
+        <div className="react-loader-spinner">
+            <Loader
+                type={type}
+                color="#00BFFF"
+                height={100}
+                width={100}
+                // timeout={5000}
+            />
+            <p>{type}</p>
+        </div>
     );
 };
 
@@ -27,7 +30,7 @@ const ReactLoaderSpinner = () => {
                     React Loader Spinner
                 </a>
             </h2>
-            <div className="react-loader-spinner">
+            <div className="react-loader-spinner-row">
                 <LoaderWrapper type="Audio" />
                 <LoaderWrapper type="BallTriangle" />
                 <LoaderWrapper type="Bars" />

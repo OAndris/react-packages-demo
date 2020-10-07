@@ -1,7 +1,14 @@
-.react-loader-spinner {
+.react-loader-spinner-row {
     margin: 2em 4em;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-flow: row wrap;
     width: 100%;
+}
+
+.react-loader-spinner {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
 }

@@ -6,7 +6,9 @@
 }
 
 h1 {
-    margin: 1em;
+    margin: 1em 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 a {
@@ -14,7 +16,6 @@ a {
 }
 
 .App {
-    margin: 0 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,5 +27,8 @@ a {
 }
 
 section {
-    margin: 1em 0;
+    margin: 1em 2em;
+    max-width: 80em;
+    padding: 2em;
+    background-color: #f5f5f5;
 }

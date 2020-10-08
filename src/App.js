@@ -6,7 +6,7 @@ import ReactAnimatedBurgers from './components/ReactAnimatedBurgers/ReactAnimate
 const App = () => {
     return (
         <div className="App">
-            <h1>Hello</h1>
+            <h1>Demo of some React packages</h1>
             <ReactLoaderSpinner />
             <ReactAnimatedBurgers />
         </div>

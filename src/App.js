@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import ReactLoaderSpinner from './components/ReactLoaderSpinner/ReactLoaderSpinner.js';
+import './App.scss';
+import ReactLoaderSpinner from './components/ReactLoaderSpinner/ReactLoaderSpinner';
 
 const App = () => {
     return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import Loader from 'react-loader-spinner';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
-import './ReactLoaderSpinner.css';
+import './ReactLoaderSpinner.scss';
 
 const LoaderWrapper = ({ type }) => {
     return (

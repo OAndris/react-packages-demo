@@ -1,0 +1,26 @@
+@import './assets/variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 1em;
+}
+
+a {
+    color: $link-color;
+}
+
+.App {
+    margin: 0 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > * {
+        width: 100%;
+        text-align: center;
+    }
+}

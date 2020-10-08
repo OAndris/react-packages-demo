@@ -1,0 +1,97 @@
+import React, { useState, useCallback } from 'react';
+import {
+    HamburgerSpin,
+    HamburgerArrow,
+    HamburgerArrowAlt,
+    HamburgerArrowAltReverse,
+    HamburgerBoring,
+    HamburgerCollapse,
+    HamburgerElastic,
+    HamburgerEmphatic,
+    HamburgerMinus,
+    HamburgerSlider,
+    HamburgerSpring,
+    HamburgerSqueeze,
+    HamburgerStand,
+} from 'react-animated-burgers';
+import './ReactAnimatedBurgers.scss';
+
+const ReactAnimatedBurgers = () => {
+    const [isActive, setIsActive] = useState(false);
+    const toggleButton = useCallback(
+        () => setIsActive((prevState) => !prevState),
+        []
+    );
+
+    return (
+        <section>
+            <HamburgerSpin
+                buttonColor="gray"
+                barColor="#F5F5F5"
+                {...{ isActive, toggleButton }}
+            />
+            <HamburgerArrow
+                buttonColor="orange"
+                barColor="#F5F5F5"
+                {...{ isActive, toggleButton }}
+            />
+            <HamburgerArrowAlt
+                buttonColor="gray"
+                barColor="#F5F5F5"
+                {...{ isActive, toggleButton }}
+            />
+            <HamburgerArrowAltReverse
+                buttonColor="orange"
+                barColor="#F5F5F5"
+                {...{ isActive, toggleButton }}
+            />
+            <HamburgerBoring
+                buttonColor="gray"
+                barColor="#F5F5F5"
+                {...{ isActive, toggleButton }}
+            />
+            <HamburgerCollapse
+                buttonColor="orange"
+                barColor="#F5F5F5"
+                {...{ isActive, toggleButton }}
+            />
+            <HamburgerElastic
+                buttonColor="gray"
+                barColor="#F5F5F5"
+                {...{ isActive, toggleButton }}
+            />
+            <HamburgerEmphatic
+                buttonColor="orange"
+                barColor="#F5F5F5"
+                {...{ isActive, toggleButton }}
+            />
+            <HamburgerMinus
+                buttonColor="gray"
+                barColor="#F5F5F5"
+                {...{ isActive, toggleButton }}
+            />
+            <HamburgerSlider
+                buttonColor="orange"
+                barColor="#F5F5F5"
+                {...{ isActive, toggleButton }}
+            />
+            <HamburgerSpring
+                buttonColor="gray"
+                barColor="#F5F5F5"
+                {...{ isActive, toggleButton }}
+            />
+            <HamburgerSqueeze
+                buttonColor="orange"
+                barColor="#F5F5F5"
+                {...{ isActive, toggleButton }}
+            />
+            <HamburgerStand
+                buttonColor="gray"
+                barColor="#F5F5F5"
+                {...{ isActive, toggleButton }}
+            />
+        </section>
+    );
+};
+
+export default ReactAnimatedBurgers;

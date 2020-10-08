@@ -31,17 +31,21 @@ const ReactLoaderSpinner = () => {
                 </a>
             </h2>
             <div className="react-loader-spinner-row">
-                <LoaderWrapper type="Audio" />
-                <LoaderWrapper type="BallTriangle" />
-                <LoaderWrapper type="Bars" />
-                <LoaderWrapper type="Circles" />
-                <LoaderWrapper type="Grid" />
-                <LoaderWrapper type="Hearts" />
-                <LoaderWrapper type="Oval" />
-                <LoaderWrapper type="Puff" />
-                <LoaderWrapper type="Rings" />
-                <LoaderWrapper type="TailSpin" />
-                <LoaderWrapper type="ThreeDots" />
+                {[
+                    'Audio',
+                    'BallTriangle',
+                    'Bars',
+                    'Circles',
+                    'Grid',
+                    'Hearts',
+                    'Oval',
+                    'Puff',
+                    'Rings',
+                    'TailSpin',
+                    'ThreeDots',
+                ].map((loaderType) => (
+                    <LoaderWrapper type={loaderType} />
+                ))}
             </div>
         </React.Fragment>
     );

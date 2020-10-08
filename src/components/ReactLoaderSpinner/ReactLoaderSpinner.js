@@ -2,6 +2,7 @@ import React from 'react';
 import Loader from 'react-loader-spinner';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import './ReactLoaderSpinner.scss';
+import Title from '../Title/Title';
 
 const LoaderWrapper = ({ type }) => {
     return (
@@ -20,16 +21,11 @@ const LoaderWrapper = ({ type }) => {
 
 const ReactLoaderSpinner = () => {
     return (
-        <React.Fragment>
-            <h2>
-                <a
-                    href="https://www.npmjs.com/package/react-loader-spinner"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    React Loader Spinner
-                </a>
-            </h2>
+        <section>
+            <Title
+                title="React Loader Spinner"
+                href="https://www.npmjs.com/package/react-loader-spinner"
+            />
             <div className="react-loader-spinner-row">
                 {[
                     'Audio',
@@ -47,7 +43,7 @@ const ReactLoaderSpinner = () => {
                     <LoaderWrapper type={loaderType} />
                 ))}
             </div>
-        </React.Fragment>
+        </section>
     );
 };
 

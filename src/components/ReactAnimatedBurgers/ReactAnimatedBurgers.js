@@ -14,7 +14,7 @@ import {
     HamburgerSqueeze,
     HamburgerStand,
 } from 'react-animated-burgers';
-import './ReactAnimatedBurgers.scss';
+import Title from '../Title/Title';
 
 const ReactAnimatedBurgers = () => {
     const [isActive, setIsActive] = useState(false);
@@ -25,6 +25,10 @@ const ReactAnimatedBurgers = () => {
 
     return (
         <section>
+            <Title
+                title="React Animated Burgers"
+                href="https://www.npmjs.com/package/react-animated-burgers"
+            />
             <HamburgerSpin
                 buttonColor="gray"
                 barColor="#F5F5F5"

@@ -3,6 +3,7 @@ import './App.scss';
 import ReactLoaderSpinner from './components/ReactLoaderSpinner/ReactLoaderSpinner';
 import ReactAnimatedBurgers from './components/ReactAnimatedBurgers/ReactAnimatedBurgers';
 import ReactResponsiveCarousel from './components/ReactResponsiveCarousel/ReactResponsiveCarousel';
+import ReactChartJs2 from './components/ReactChartJs2/ReactChartJs2';
 
 const App = () => {
     return (
@@ -11,6 +12,7 @@ const App = () => {
             <ReactLoaderSpinner />
             <ReactAnimatedBurgers />
             <ReactResponsiveCarousel />
+            <ReactChartJs2 />
         </div>
     );
 };

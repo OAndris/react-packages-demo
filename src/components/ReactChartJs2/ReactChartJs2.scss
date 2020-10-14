@@ -1,0 +1,8 @@
+#charts {
+    display: flex;
+    flex-flow: row wrap;
+    > * {
+        margin: 5em auto;
+        max-width: 640px;
+    }
+}

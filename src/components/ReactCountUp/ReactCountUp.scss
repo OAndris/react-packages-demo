@@ -1,0 +1,26 @@
+#counters {
+    display: flex;
+    justify-content: center;
+    > div {
+        margin: 1em;
+        padding: 0.5em;
+        border: 1px solid gray;
+        span {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: rgb(238, 143, 0);
+        }
+    }
+}
+
+button {
+    padding: 0.5em 1em;
+    cursor: pointer;
+    background-color: #0080f0;
+    color: white;
+    text-transform: uppercase;
+    &:hover {
+        color: #0080f0;
+        background-color: white;
+    }
+}

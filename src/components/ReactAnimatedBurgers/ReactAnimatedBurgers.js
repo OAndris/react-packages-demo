@@ -19,6 +19,7 @@ import './ReactAnimatedBurgers.scss';
 
 const ReactAnimatedBurgers = () => {
     const [isActive, setIsActive] = useState(false);
+
     const toggleButton = useCallback(
         () => setIsActive((prevState) => !prevState),
         []

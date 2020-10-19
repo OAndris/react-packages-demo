@@ -1,5 +1,13 @@
 import React from 'react';
-import { Bar, Line, Pie, Doughnut, Radar, Polar } from 'react-chartjs-2';
+import {
+    Bar,
+    Line,
+    Pie,
+    Doughnut,
+    Radar,
+    Polar,
+    Scatter,
+} from 'react-chartjs-2';
 import Title from '../Title/Title';
 import './ReactChartJs2.scss';
 
@@ -57,6 +65,95 @@ const ReactChartJs2 = () => {
         },
     };
 
+    const scatter = {
+        data: {
+            datasets: [
+                {
+                    label: 'First',
+                    borderColor: 'red',
+                    data: [
+                        { x: 0, y: 0 },
+                        { x: 1, y: 5 },
+                        { x: 2, y: 2 },
+                        { x: 3, y: 0 },
+                        { x: 4, y: 0 },
+                        { x: 5, y: 0 },
+                    ],
+                    showLine: true,
+                    lineTension: 0,
+                    fill: false,
+                    borderWidth: 2,
+                },
+                {
+                    label: 'Second',
+                    borderColor: 'blue',
+                    data: [
+                        { x: 0, y: 0 },
+                        { x: 1, y: 9 },
+                        { x: 2, y: 3 },
+                        { x: 2, y: 0 },
+                    ],
+                    showLine: true,
+                    lineTension: 0,
+                    fill: false,
+                    borderWidth: 2,
+                },
+            ],
+        },
+        options: {
+            title: {
+                display: true,
+                text: ['Title line 1', 'Title line 2'],
+                fontSize: 20,
+            },
+            legend: {
+                position: 'right',
+                labels: {
+                    fontSize: 16,
+                },
+            },
+            scales: {
+                xAxes: [
+                    {
+                        ticks: {
+                            beginAtZero: true,
+                            fontSize: 16,
+                            padding: 20,
+                            callback(value, index) {
+                                return index % 2 === 0 ? '' : value;
+                            },
+                        },
+                        gridLines: {
+                            drawTicks: false,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Data X',
+                            fontSize: 16,
+                        },
+                    },
+                ],
+                yAxes: [
+                    {
+                        ticks: {
+                            beginAtZero: true,
+                            fontSize: 16,
+                            padding: 20,
+                        },
+                        gridLines: {
+                            drawTicks: false,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Data Y',
+                            fontSize: 16,
+                        },
+                    },
+                ],
+            },
+        },
+    };
+
     return (
         <section>
             <Title
@@ -70,6 +167,7 @@ const ReactChartJs2 = () => {
                 <Doughnut data={chartData} options={chartOptions} />
                 <Radar data={chartData} options={chartOptions} />
                 <Polar data={chartData} options={chartOptions} />
+                <Scatter data={scatter.data} options={scatter.options} />
             </div>
         </section>
     );

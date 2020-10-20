@@ -83,6 +83,7 @@ const ReactChartJs2 = () => {
                     lineTension: 0,
                     fill: false,
                     borderWidth: 2,
+                    hoverBorderWidth: 7,
                 },
                 {
                     label: 'Second',
@@ -97,6 +98,7 @@ const ReactChartJs2 = () => {
                     lineTension: 0,
                     fill: false,
                     borderWidth: 2,
+                    hoverBorderWidth: 7,
                 },
             ],
         },
@@ -105,6 +107,12 @@ const ReactChartJs2 = () => {
                 display: true,
                 text: ['Title line 1', 'Title line 2'],
                 fontSize: 20,
+            },
+            tooltips: {
+                bodyFontSize: 16,
+                yPadding: 10,
+                caretSize: 10,
+                caretPadding: 10,
             },
             legend: {
                 position: 'right',
